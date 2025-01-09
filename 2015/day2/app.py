@@ -45,8 +45,6 @@ for line in lines:
     total_cover_area+=cal_cover_area(line[0],line[1],line[2])
     total_ribbon += cal_ribbon(line[0],line[1],line[2])
 
-
 print(total_cover_area, total_ribbon)
-
-
+f.close()
 
