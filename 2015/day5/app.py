@@ -74,9 +74,8 @@ def is_nice_new_rules(s):
     return has_repeated_pair(s) and has_repeat_with_one_between(s)
 
 nice_count = 0
-for line in lines:
-    # Remove the newline character
-    line = line.replace('\n', '')
-    nice_count = sum(is_nice_new_rules(s) for s in line)
+# Remove the newline character
+line = line.replace('\n', '')
+nice_count = sum(is_nice_new_rules(s) for s in lines)
 
 print(nice_count)
